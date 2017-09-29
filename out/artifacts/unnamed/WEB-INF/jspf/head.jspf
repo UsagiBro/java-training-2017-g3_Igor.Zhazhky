@@ -1,0 +1,12 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>${pageScope.title}</title>
+    <fmt:setLocale value="${sessionScope.language}"/>
+    <fmt:setBundle basename="locale"/>
+    <link href="/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <script src="/js/main.js"></script>
+</head>
+</html>

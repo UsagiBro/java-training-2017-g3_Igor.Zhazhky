@@ -1,0 +1,3 @@
+<c:if test="${not empty sessionScope.user && sessionScope.user.role.name == 'admin'}">
+<a href="/controller?command=toAdminCabinet"><fmt:message key="page.lang.admin.cabinet"/></a>
+</c:if>

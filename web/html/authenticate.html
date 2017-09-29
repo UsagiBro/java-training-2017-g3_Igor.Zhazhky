@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+    <link href="/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+</head>
+<body>
+<form action="/controller" method="post">
+    <input type="hidden" name="command" value="authenticate">
+    <div class="col-lg-4 col-sm-6 col-sm-offset-4">
+        <div id="contact-form" class="form-container" data-form-container
+             style="color: rgb(46, 125, 50); background: rgb(200, 230, 201);">
+            <div class="row">
+                <div class="form-title">
+                    <span>Please sign in</span>
+                </div>
+            </div>
+            <div class="input-container">
+                <div class="row">
+					<span class="req-input valid">
+						<span class="input-status" data-toggle="tooltip" data-placement="top"
+                              title=""> </span>
+						<input type="text" name="login" placeholder="Login" pattern="(\pL){3,16}"
+                               title="Login must contain only letters and be longer than 3 symbols">
+					</span>
+                </div>
+                <div class="row">
+					<span class="req-input valid">
+						<span class="input-status" data-toggle="tooltip" data-placement="top"
+                              title=""> </span>
+						<input type="password" name="password" placeholder="Password" pattern="(\pL|\d){5,16}"
+                               title="Password can consist of letters and numbers and must be longer than 4 symbols">
+					</span>
+                </div>
+                <div class="row submit-row">
+                    <button class="col-md-4 btn btn-lg btn-success" style="margin-bottom: 10px" type="submit">
+                        Sign in
+                    </button>
+                    <a href="/html/registration.html">
+                        <button class="col-md-4 col-sm-offset-4 btn btn-lg btn-info"
+                                style="margin-bottom: 10px" type="button">Register
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>

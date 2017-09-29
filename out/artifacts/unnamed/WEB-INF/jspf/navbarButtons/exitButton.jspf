@@ -1,0 +1,6 @@
+<c:if test="${not empty sessionScope.user}">
+    <a href="/controller?command=exit"><fmt:message key="page.lang.exit"/></a>
+</c:if>
+<c:if test="${empty sessionScope.user}">
+    <a href="/html/authenticate.html"><fmt:message key="page.lang.signin"/></a>
+</c:if>
