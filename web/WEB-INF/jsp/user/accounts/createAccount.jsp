@@ -43,9 +43,10 @@
                         </label>
                         <div class="col-md-8">
                             <select id="selectbasic" name="name" class="form-control">
-                                <option value="checking account">Checking account</option>
-                                <option value="credit account">Credit account</option>
-                                <option value="deposit account">Deposit account</option>
+                                <option value="checking account"><fmt:message key="page.lang.checking.account"/></option>
+                                <option value="credit account"><fmt:message key="page.lang.credit.account"/></option>
+                                <option value="deposit account"><fmt:message
+                                        key="page.lang.deposit.account"/></option>
                             </select>
                         </div>
                     </div>
